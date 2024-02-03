@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tranbistro</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/b4dc7902e6.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Actor&family=Kalam:wght@300;400;700&family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <script src="navabar-and-scrollup.js" defer></script>
+
+
+
+</head>
+    <div class="loader"></div>
+
+    <div id="Header">
+        <div class="Main">
+            <button id="scrollUpBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+            <div class="Infobox">
+                
+                <div id="notification"></div>
+
+                <div class="nav-left">
+                    <p class="copyText" onclick="copyToClipboard(this)"><i class="fas fa-map-marker-alt"></i> Nádražní 307, 256 01 Benešov u Prahy</p>
+                    <p class="copyText"><i class="far fa-clock"></i> Po-So 8:00 až 21:00</p>
+                </div>
+
+                <div class="nav-right">
+                    <p class="copyText" onclick="copyToClipboard(this)"><i class="fa-solid fa-phone"></i> +287 367 384</p>
+                    <p class="copyText" onclick="copyToClipboard(this)"><i class="fa-regular fa-envelope"></i> tranbistro@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="nav">
+
+                <div class="logo"><img src="" style="width: 10%;"></div>
+
+                <nav>
+                    <li><a href="">Menu</a></li>
+                    <li><a href="">Boba Drinks</a></li>
+                    <li><a href="#Galerie">Galerie</a></li>
+                    <li><a href="#Kontakt">Kontakt</a></li>
+                </nav>
+
+                <div class="socials">
+                    <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="Headbox">
+                    <h1 class="title">Tran Bistro</h1>
+                    <h6 class="subtitle">sushi & boba</h6>
+                    <p class="quot">"Bistro, kde každé setkání s jídlem se promění v nezapomenutelný gastronomický zážitek."</p>
+                    <li><a href="" class="btn">Objednat si</a></li>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="About">
+        <div class="container">
+            <div class="Box">
+                <div class="Photo">
+                    <img src="fotky/place.jpg" class="place">
+                </div>
+
+                <div class="Abtext">
+                    <p style="position: relative; top: 140px;">O nás</p>
+                    <p class="btext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ab debitis, id deserunt porro sit vel impedit illum quasi. Assumenda veritatis quidem fugiat amet eveniet corporis et quo cumque maxime. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur repellendus, culpa quis excepturi doloribus quas, architecto rem velit omnis animi iste eius? Excepturi aperiam, tempore ipsum omnis nostrum voluptate sapiente!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam obcaecati, inventore quisquam ad laudantium mollitia officia quos debitis sunt unde molestias vel incidunt eius doloremque esse, eaque autem. Facere, sunt.
+                    </p>
+                </div>
+                    
+            </div>
+        </div>
+    </div>
+
+    <div id="Menu">
+        <div class="container">
+
+        </div>
+    </div>
+
+    <div id="Boba">
+
+    </div>
+
+
+
+    <div id="Galerie">
+        <div class="container">
+            <div class="Insta">
+                <h3>Sleduj nás na</h3>
+                <h1>@InstagramTran </h1>
+
+                <div class="pBox" id="gallery">
+                    <img src="fotky/1.jpg" onclick="openFullScreen('fotky/1.jpg')">
+                    <img src="fotky/2.jpg" onclick="openFullScreen('fotky/2.jpg')">
+                    <img src="fotky/3.jpg" onclick="openFullScreen('fotky/3.jpg')">
+                    <img src="fotky/4.jpg" onclick="openFullScreen('fotky/4.jpg')">
+                    <img src="fotky/9.jpg" onclick="openFullScreen('fotky/9.jpg')">
+                    <img src="fotky/10.jpg" onclick="openFullScreen('fotky/10.jpg')">
+                    <img src="fotky/11.jpg" onclick="openFullScreen('fotky/11.jpg')">
+                    <img src="fotky/12.jpg" onclick="openFullScreen('fotky/12.jpg')">
+                </div>
+
+                <div id="fullScreenOverlay">
+                    <span id="closeButton" onclick="closeFullScreen()">&times;</span>
+                    <button id="prevButton" onclick="prevImage()"><i class="fa-solid fa-chevron-left"></i></button>
+                    <img src="" id="fullScreenImage">
+                    <button id="nextButton" onclick="nextImage()"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Kontakt">
+        <div class="container">
+            <div class="KBox">
+
+                <div class="Udaje">
+                    <h4>Kontaktní údaje</h4>
+                    <div class="con">
+                        <p>email</p>
+                        <p>+287 367 384</p>
+                    </div>
+
+                    <div class="soc">
+                        <p>insta</p>
+                        <p>face</p>
+                    </div>
+
+                </div>
+
+                <div class="Doba">
+                    <h4>Otevírací doba</h4>
+                    
+                    <div class="table" style="font-size: 20px;">
+                        <div class="den">
+                            <p>Pondělí</p>
+                            <p>Úterý</p>
+                            <p>Středa</p>
+                            <p>Čtvrtek</p>
+                            <p>Pátek</p>
+                            <p>Sobota</p>
+                            <p>Neděle</p>
+                        </div>
+    
+                        <div class="cas">
+                            <p>8:00 - 20:00</p>
+                            <p>8:00 - 20:00</p>
+                            <p>8:00 - 20:00</p>
+                            <p>8:00 - 20:00</p>
+                            <p>8:00 - 20:00</p>
+                            <p>8:00 - 20:00</p>
+                            <p>8:00 - 20:00</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="Mapa">
+                    <h4>Mapa</h4>
+                    <div class="gmapa">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387.95172473639343!2d14.683380327347443!3d49.77986658155782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470c7fa3dd15c8cf%3A0xaf91b1bd29e4b34!2zTsOhZHJhxb5uw60gMzA3LCAyNTYgMDEgQmVuZcWhb3YgdSBQcmFoeQ!5e0!3m2!1sen!2scz!4v1706974301425!5m2!1sen!2scz" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+<body>
+    
+</body>
+</html>
